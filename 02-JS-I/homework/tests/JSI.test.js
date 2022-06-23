@@ -1,5 +1,252 @@
-/* eslint-disable no-undef */
-const {
+// En esta ocasión devemos responder estas 6 preguntas plantiadas, por el `nul`
+
+//Crea un variable ¨string¨,cual quier palabra deseada, como:
+const nuevaString = 'Hola mundo';
+
+// Crea una variable ¨numérica¨, puede ser cualquier número:
+const nuevoNum = 02;
+
+// Crea una variable ¨booleana¨:
+const nuevoBool = true;
+
+// Resuelve el siguiente problema matemático:
+const nuevaResta = 13 - 8 === 5;
+
+// Resuelve el siguiente problema matemático:
+const nuevaMultiplicacion = 10 * 5 === 50 ;
+
+// Resuelve el siguiente problema matemático:
+const nuevoModulo = 21 % 5 === 1;
+
+
+// En los próximos 22 problemas, deberás completar la función.
+// Todo tu código irá dentro de las llaves de la función.
+// Asegúrate que usas "return" cuando la consola te lo pida.
+// Pista: "console.log()" NO fucionará.
+// No cambies los nombres de las funciones.
+
+function devolverString(str) {
+  // "Return" la string provista: str
+  // Tu código:
+    return str;
+}
+
+function suma(x, y) {
+  // "x" e "y" son números
+  // Suma "x" e "y" juntos y devuelve el valor
+  // Tu código:
+  return x + y;
+}
+
+function resta(x, y) {
+  // Resta "x" de "y" y devuelve el valor
+  // Tu código:
+  return x - y;
+}
+
+function multiplica(x, y) {
+  // Multiplica "x" por "y" y devuelve el valor
+  // Tu código:
+  return x * y;
+}
+
+function divide(x, y) {
+  // Divide "x" entre "y" y devuelve el valor
+  // Tu código:
+  return x / y;
+}
+
+function sonIguales(x, y) {
+  // Devuelve "true" si "x" e "y" son iguales
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  if (x === y) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function tienenMismaLongitud(str1, str2) {
+  // Devuelve "true" si las dos strings tienen la misma longitud
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  return str1.length === str2.length;
+}
+
+function menosQueNoventa(num) {
+  // Devuelve "true" si el argumento de la función "num" es menor que noventa
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  if(num < 90) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function mayorQueCincuenta(num) {
+  // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  return num > 50;
+}
+
+function obtenerResto(x, y) {
+  // Obten el resto de la división de "x" entre "y"
+  // Tu código:
+  return x % y;
+}
+
+function esPar(num) {
+  // Devuelve "true" si "num" es par
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  if( num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function esImpar(num) {
+  // Devuelve "true" si "num" es impar
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  if(num % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function elevarAlCuadrado(num) {
+  // Devuelve el valor de "num" elevado al cuadrado
+  // ojo: No es raiz cuadrada!
+  // Tu código:
+  return Math.pow(num, 2);
+}
+
+function elevarAlCubo(num) {
+  // Devuelve el valor de "num" elevado al cubo
+  // Tu código:
+  return num * num * num;
+}
+
+function elevar(num, exponent) {
+  // Devuelve el valor de "num" elevado al exponente dado en "exponent"
+  // Tu código:
+  return Math.pow(num, exponent);
+}
+
+function redondearNumero(num) {
+  // Redondea "num" y devuélvelo
+  // Tu código:
+  // var resto = num % 1;
+  // var entero = num - resto;
+  // if (resto >= 0.5) {
+  //   return entero + 1;
+  // } else {
+  //   return entero;
+  // }
+  return Math.round(num);
+}
+
+function redondearHaciaArriba(num) {
+  // Redondea "num" hacia arriba y devuélvelo
+  // Tu código:
+  return Math.ceil(num);
+}
+
+function numeroRandom() {
+  //Generar un número al azar entre 0 y 1 y devolverlo
+  //Pista: investigá qué hace el método Math.random()
+  return Math.random();
+}
+
+function esPositivo(numero) {
+  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
+  //Si el número es positivo, devolver ---> Es ¨ngativo¨
+  //Si el número es negativo, devolver ---> Es ¨positivo¨
+  //Si el número es 0, devuelve false
+  if(numero === 0) {
+    return Es positivo¨
+  }
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
+  }
+}
+
+function agregarSimboloExclamacion(str) {
+  // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
+  // Ejemplo: "hello world" pasaría a ser "hello world!"
+  // Tu código:
+  return str + '!';
+}
+
+function combinarNombres(nombre, apellido) {
+  // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
+  // Ejemplo: "Soy", "Henry" -> "Soy Henry"
+  // Tu código:
+  var combinado = nombre + ' ' + apellido;
+  return combinado;
+}
+
+function obtenerSaludo(nombre) {
+  // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
+  // "Martin" -> "Hola Martin!"
+  // Tu código:
+  return 'Hola ' + nombre + '!';
+}
+
+function obtenerAreaRectangulo(alto, ancho) {
+  // Retornar el area de un cuadrado teniendo su altura y ancho
+  // Tu código:
+  return alto * ancho;
+}
+
+function retornarPerimetro(lado){
+  //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
+  //Escribe tu código aquí
+  return lado * 4
+}
+
+function areaDelTriangulo(base, altura){
+  //Desarrolle una función que calcule el área de un triángulo.
+  //Escribe tu código aquí
+  return (base * altura)/2
+
+}
+
+function deEuroAdolar(euro){
+  //Supongamos que 1 euro equivale a 1.20 dólares. 
+  //Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
+  //Escribe tu código aquí
+  return euro * 1.2
+}
+
+function esVocal(letra){
+  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
+  //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
+  //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
+  //Escribe tu código aquí
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
+
+}
+
+// No modificar nada debajo de esta línea
+// --------------------------------
+
+module.exports = {
   nuevaString,
   nuevoNum,
   nuevoBool,
@@ -33,265 +280,4 @@ const {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-} = require('../homework.js');
-
-describe('nuevaString', function() {
-  it('Deberia ser un string', function() {
-    expect(typeof nuevaString).toBe('string');
-  });
-});
-
-describe('nuevoNum', function() {
-  it('Deberia ser un numero', function() {
-    expect(typeof nuevoNum).toBe('number');
-  });
-});
-
-describe('nuevoBool', function() {
-  it('Deberia ser un booleano', function() {
-    expect(typeof nuevoBool).toBe('boolean');
-  });
-});
-
-describe('nuevaResta', function() {
-  it('Deberia ser un booleano', function() {
-    expect(nuevaResta).toBe(true);
-  });
-});
-
-describe('nuevaMultiplicacion', function() {
-  it('Deberia ser un booleano', function() {
-    expect(nuevaMultiplicacion).toBe(true);
-  });
-});
-
-describe('nuevoModulo', function() {
-  it('Deberia ser un booleano', function() {
-    expect(nuevoModulo).toBe(true);
-  });
-});
-
-describe('devolverString(str)', function() {
-  it('Deberia devolver el string provisto', function() {
-    let string = 'Henry';
-    expect(devolverString(string)).toBe(string);
-  });
-});
-
-describe('suma(x, y)', function() {
-  it('Deberia devolver la suma de los dos argumentos', function() {
-    expect(suma(5, 5)).toBe(10);
-    expect(suma(-1, 5)).toBe(4);
-  });
-});
-
-describe('resta(x, y)', function() {
-  it('Deberia devolver la diferencia de los dos argumentos', function() {
-    expect(resta(5, 5)).toBe(0);
-    expect(resta(-1, 5)).toBe(-6);
-    expect(resta(5, -5)).toBe(10);
-    expect(resta(0, 0)).toBe(0);
-  });
-});
-
-describe('divide(x, y)', function() {
-  it('Deberia devolver la division de los dos argumentos', function() {
-    expect(divide(5, 5)).toBe(1);
-    expect(divide(10, 5)).toBe(2);
-    expect(divide(11, 2)).toBe(5.5);
-  });
-});
-
-describe('multiplica(x, y)', function() {
-  it('Deberia devolver el producto de los dos argumentos', function() {
-    expect(multiplica(5, 5)).toBe(25);
-    expect(multiplica(10, -5)).toBe(-50);
-    expect(multiplica(11, 0)).toBe(0);
-  });
-});
-
-
-describe('sonIguales(x, y)', function() {
-  it('Deberia devolver true si los argumentos son iguales y sino false', function() {
-    expect(sonIguales(15, 15)).toBe(true);
-    expect(sonIguales(90, 50)).toBe(false);
-    expect(sonIguales('test', 'test')).toBe(true);
-  });
-});
-
-describe('tienenMismaLongitud(str1, str2)', function() {
-  it('Deberia devolver true si los strings tienen la misma longitud y sino false', function() {
-    expect(tienenMismaLongitud('hi', 'there')).toBe(false);
-    expect(tienenMismaLongitud('javascript', 'bumfuzzled')).toBe(true);
-  });
-});
-
-describe('menosQueNoventa(num)', function() {
-  it('Deberia devolver true si el numero es menor a noventa sino false', function() {
-    expect(menosQueNoventa(15)).toBe(true);
-    expect(menosQueNoventa(90)).toBe(false);
-    expect(menosQueNoventa(100)).toBe(false);
-  });
-});
-
-describe('mayorQueCincuenta(num)', function() {
-  it('Deberia devolver true si el numero es mayor a cincuenta sino false', function() {
-    expect(mayorQueCincuenta(15)).toBe(false);
-    expect(mayorQueCincuenta(50)).toBe(false);
-    expect(mayorQueCincuenta(60)).toBe(true);
-  });
-});
-
-describe('obtenerResto(x, y)', function() {
-  it('Deberia devolver el resto de dividir x sobre y', function() {
-    expect(obtenerResto(15, 5)).toBe(0);
-    expect(obtenerResto(21, 5)).toBe(1);
-    expect(obtenerResto(22, 5)).toBe(2);
-  });
-});
-
-describe('esPar(num)', function() {
-  it('Deberia devolver true si el numero es par sino false', function() {
-    expect(esPar(6)).toBe(true);
-    expect(esPar(7)).toBe(false);
-    expect(esPar(0)).toBe(true);
-  });
-});
-
-describe('esImpar(num)', function() {
-  it('Deberia devolver true si el numero es impar sino false', function() {
-    expect(esImpar(6)).toBe(false);
-    expect(esImpar(7)).toBe(true);
-    expect(esImpar(0)).toBe(false);
-  });
-});
-
-describe('elevarAlCuadrado(num)', function() {
-  it('Deberia devolver el numero elevado al cuadrado', function() {
-    expect(elevarAlCuadrado(6)).toBe(36);
-    expect(elevarAlCuadrado(7)).toBe(49);
-    expect(elevarAlCuadrado(0)).toBe(0);
-    expect(elevarAlCuadrado(-5)).toBe(25);
-  });
-});
-
-describe('elevarAlCubo(num)', function() {
-  it('Deberia devolver el numero elevado al cubo', function() {
-    expect(elevarAlCubo(3)).toBe(27);
-    expect(elevarAlCubo(0)).toBe(0);
-    expect(elevarAlCubo(-5)).toBe(-125);
-  });
-});
-
-describe('elevar(num, exponent)', function() {
-  it('Deberia devolver el numero elevado al exponente indicado', function() {
-    expect(elevar(2, 2)).toBe(4);
-    expect(elevar(2, 3)).toBe(8);
-    expect(elevar(0, 5)).toBe(0);
-    expect(elevar(10, 1)).toBe(10);
-  });
-});
-
-describe('redondearNumero(num)', function() {
-  it('Deberia devolver el numero redondeado', function() {
-    expect(redondearNumero(1.5)).toBe(2);
-    expect(redondearNumero(2)).toBe(2);
-    expect(redondearNumero(0.1)).toBe(0);
-  });
-});
-
-describe('redondearHaciaArriba(num)', function() {
-  it('Deberia devolver el numero redondeado para arriba', function() {
-    expect(redondearHaciaArriba(1.5)).toBe(2);
-    expect(redondearHaciaArriba(2)).toBe(2);
-    expect(redondearHaciaArriba(0.1)).toBe(1);
-  });
-});
-
-describe('numeroRandom()', function() {
-  it('Debería devolver un número entre 0 y 1', function() {
-    expect(typeof numeroRandom()).toBe('number');
-    expect(numeroRandom()).toBeGreaterThanOrEqual(0);
-    expect(numeroRandom()).toBeLessThan(1);
-  });
-});
-
-describe('esPositivo(numero)', function() {
-  it('Debería devolver el string \Es positivo ó Es negativo\ según corresponda', function() {
-    expect(esPositivo(0)).toBe(false);
-    expect(esPositivo(23)).toBe('Es positivo');
-    expect(esPositivo(-2)).toBe('Es negativo');
-  });
-});
-
-describe('agregarSimboloExclamacion(str)', function() {
-  it('Deberia agregar un signo de exclamacion al final del string', function() {
-    expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
-    expect(agregarSimboloExclamacion('Soy Henry')).toBe('Soy Henry!');
-  });
-});
-
-describe('combinarNombres(firstName, lastName)', function() {
-  it('Deberia devolver los strings combinados con un espacio en el medio', function() {
-    expect(combinarNombres('hello', 'world')).toBe('hello world');
-    expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
-  });
-});
-
-describe('obtenerSaludo(name)', function() {
-  it('Deberia devolver el string \'Hola {name}!\'', function() {
-    expect(obtenerSaludo('Martin')).toBe('Hola Martin!');
-    expect(obtenerSaludo('Antonio')).toBe('Hola Antonio!');
-  });
-});
-
-describe('obtenerAreaRectangulo(alto, ancho)', function() {
-  it('Deberia retornar el area correcta del rectangulo', function() {
-    expect(obtenerAreaRectangulo(2, 2)).toBe(4);
-    expect(obtenerAreaRectangulo(3, 6)).toBe(18);
-    expect(obtenerAreaRectangulo(0, 2)).toBe(0);
-  });
-});
-
-describe('retornarPerimetro(lado)', function() {
-  it('Deberia retornar el perímetro correcto del cuadrado', function() {
-    expect(retornarPerimetro(2)).toBe(8);
-    expect(retornarPerimetro(8)).toBe(32);
-    expect(retornarPerimetro(0)).toBe(0);
-  });
-});
-
-
-describe('areaDelTriangulo( base, altura)', function() {
-  it('Deberia retornar el area correcta del triángulo', function() {
-    expect(areaDelTriangulo(10, 5)).toBe(25);
-    expect(areaDelTriangulo(20, 10)).toBe(100);
-    expect(areaDelTriangulo(0, 10)).toBe(0);
-  });
-});
-
-describe('deEuroAdolar(euro)', function() {
-  it('Deberia retornar el valor correcto de euro a dolar', function() {
-    expect(deEuroAdolar(100)).toBe(120);
-    expect(deEuroAdolar(200)).toBe(240);
-    expect(deEuroAdolar(50)).toBe(60);
-  });
-});
-
-describe('esVocal(letra)', function() {
-  it('Deberia devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function() {
-    expect(esVocal("la")).toBe("Dato incorrecto");
-    expect(esVocal("pero")).toBe("Dato incorrecto");
-  });
-  it('Deberia devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function() {
-    expect(esVocal("l")).toBe("Dato incorrecto");
-    expect(esVocal("p")).toBe("Dato incorrecto");
-  });
-  it('Deberia devolver el string "Es vocal", si el valor ingresado lo es', function() {
-    expect(esVocal('a')).toBe('Es vocal');
-    expect(esVocal('e')).toBe('Es vocal');
-    expect(esVocal('i')).toBe('Es vocal');
-    expect(esVocal('o')).toBe('Es vocal');
-    expect(esVocal('u')).toBe('Es vocal');
-  });
-});
+};
