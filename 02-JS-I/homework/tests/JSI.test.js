@@ -1,39 +1,35 @@
-/* eslint-disable no-undef */
-const {
-  nuevaString,
-  nuevoNum,
-  nuevoBool,
-  nuevaResta,
-  nuevaMultiplicacion,
-  nuevoModulo,
-  devolverString,
-  tienenMismaLongitud,
-  sonIguales,
-  menosQueNoventa,
-  mayorQueCincuenta,
-  suma,
-  resta,
-  divide,
-  multiplica,
-  obtenerResto,
-  esPar,
-  esImpar,
-  elevarAlCuadrado,
-  elevarAlCubo,
-  elevar,
-  redondearNumero,
-  redondearHaciaArriba,
-  numeroRandom,
-  esPositivo,
-  agregarSimboloExclamacion,
-  combinarNombres,
-  obtenerSaludo,
-  obtenerAreaRectangulo,
-  retornarPerimetro,
-  areaDelTriangulo,
-  deEuroAdolar,
-  esVocal,
-} = require('../homework.js');
+// En estas 6 preguntas, reemplazamos `null` por la respuesta
+
+// Crea una variable "string", puede contener lo que quieras:
+const nuevaString = 'Hola';
+
+// Crea una variable numérica, puede ser cualquier número:
+const nuevoNum = 8;
+
+// Crea una variable booleana:
+const nuevoBool = true;
+
+// Resuelve el siguiente problema matemático:
+const nuevaResta = 10 - 5 === 5;
+
+// Resuelve el siguiente problema matemático:
+const nuevaMultiplicacion = 10 * 4 === 40 ;
+
+// Resuelve el siguiente problema matemático:
+const nuevoModulo = 21 % 5 === 1;
+
+
+// En los próximos 22 problemas, deberás completar la función.
+// Todo tu código irá dentro de las llaves de la función.
+// Asegúrate que usas "return" cuando la consola te lo pida.
+// Pista: "console.log()" NO fucionará.
+// No cambies los nombres de las funciones.
+
+function devolverString(str) {
+  // "Return" la string provista: str
+  // Tu código:
+    return str;
+}
 
 describe('nuevaString', function() {
   it('Deberia ser un string', function() {
@@ -113,9 +109,9 @@ describe('multiplica(x, y)', function() {
 
 describe('sonIguales(x, y)', function() {
   it('Deberia devolver true si los argumentos son iguales y sino false', function() {
-    expect(sonIguales(15, 15)).toBe(true);
-    expect(sonIguales(90, 50)).toBe(false);
-    expect(sonIguales('test', 'test')).toBe(true);
+    expect(sonIguales(16, 16)).toBe(true);
+    expect(sonIguales(73, 45)).toBe(false);
+    expect(sonIguales('text', 'text')).toBe(true);
   });
 });
 
@@ -148,15 +144,12 @@ describe('obtenerResto(x, y)', function() {
     expect(obtenerResto(21, 5)).toBe(1);
     expect(obtenerResto(22, 5)).toBe(2);
   });
-});
 
 describe('esPar(num)', function() {
   it('Deberia devolver true si el numero es par sino false', function() {
     expect(esPar(6)).toBe(true);
     expect(esPar(7)).toBe(false);
     expect(esPar(0)).toBe(true);
-  });
-});
 
 describe('esImpar(num)', function() {
   it('Deberia devolver true si el numero es impar sino false', function() {
@@ -195,7 +188,7 @@ describe('elevar(num, exponent)', function() {
 describe('redondearNumero(num)', function() {
   it('Deberia devolver el numero redondeado', function() {
     expect(redondearNumero(1.5)).toBe(2);
-    expect(redondearNumero(2)).toBe(2);
+    expect(redondearNumero(7)).toBe(7);
     expect(redondearNumero(0.1)).toBe(0);
   });
 });
